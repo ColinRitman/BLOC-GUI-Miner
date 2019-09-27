@@ -1,8 +1,6 @@
 package gui
 
 import (
-	"time"
-
 	"github.com/furiousteam/BLOC-GUI-Miner/src/gui/miner"
 )
 
@@ -54,9 +52,12 @@ type coinsContentJson struct {
 		CoinType string `json:"coin_type"`
 		CoinAlgo string `json:"coin_algo"`
 	} `json:"coins"`
+	XmrigSupport      map[string]interface{} `json:"xmrigSupport"`
+	XmrStakSupport    map[string]interface{} `json:"xmrStakSupport"`
 	XmrigAlgo         map[string]interface{} `json:"xmrigAlgo"`
 	XmrigVariant      map[string]interface{} `json:"xmrigVariant"`
 	Names             map[string]interface{} `json:"names"`
+	Icons             map[string]interface{} `json:"icons"`
 	Abbr2             map[string]interface{} `json:"abbreviation"`
 	CoinGeckoLinks    map[string]interface{} `json:"coinGeckoLinks"`
 	AddressPrefix     map[string]interface{} `json:"addressPrefix"`
@@ -139,15 +140,4 @@ type GlobalStats struct {
 	// PoolHTML is injected before sending the update to the front-end. Avoids
 	// having to send extra packets
 	PoolHTML string `json:"pool_html"`
-}
-
-// Announcement is the structure returned is an announcement is made
-// available
-type Announcement struct {
-	ID         int       `json:"id"`
-	Text       string    `json:"text"`
-	Link       string    `json:"link"`
-	DateString string    `json:"date"`
-	Date       time.Time `json:"-"`
-	Ann        bool      `json:"ann"`
 }

@@ -107,7 +107,7 @@ body.miner .miner-bg {
 	position: relative;
 	padding-top: 70px;
 }
-.other-currencies img {
+.other-currencies > img {
 	margin-bottom: 22px;
 }
 .other-currencies .currencies-title {
@@ -131,8 +131,27 @@ body.miner .miner-bg {
 	font-family: 'Roboto Condensed';
 	font-weight: 400;
 }
+/*
+#currencies-selector{
+	margin: 0 30px;
+	max-height: 500px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+#currencies-selector::-webkit-scrollbar-thumb{
+	max-height: 10px;
+	border-radius: 5px;
+	background: -webkit-linear-gradient(top, #ffed00 0%,#ffed00 100%);
+}
+#currencies-selector::-webkit-scrollbar{
+	border-radius: 5px;
+	width: 10px;
+	height: 10px;
+	background: #040727;
+}
+*/
 .other-currencies .currency-bg {
-	width: 416px;
+	width: 340px;
 	margin: 0 auto 15px auto;
 	background-color: #090a31cc;
 	border-radius: 3px;
@@ -149,7 +168,7 @@ body.miner .miner-bg {
 .other-currencies .currency-bg a:hover {
 	display: block;
 	color: #ffed00;
-	padding: 28px 0;
+	padding: 20px 0;
 	text-decoration: none;
 	font-family: 'Roboto Condensed';
 	font-weight: 600;
@@ -169,6 +188,9 @@ body.miner .miner-bg {
 	padding: 10px 20px;
 	opacity: .6;
 	text-decoration: none;
+}
+.other-currencies .currency-btn > img {
+	margin-right: 5px;
 }
 
 /* CHOOSE WALLET */

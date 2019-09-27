@@ -15,25 +15,33 @@ let firstrun = {
 		document.addEventListener('astilectron-ready', function() {
 			// Get the computer username
 			astilectron.sendMessage({name: "get-username", payload: ""}, function(message) {
+				console.log('[' + new Date().toUTCString() + '] ', "get-username", message.payload);
 				$('#username').html(message.payload);
-			});
 
-			// Get the actual miner path
-			astilectron.sendMessage({name: "get-miner-path", payload: ""}, function(message) {
-				$('#miner_path').html(message.payload);
-			});
+				// Get the actual miner path
+				astilectron.sendMessage({name: "get-miner-path", payload: ""}, function(message) {
+					console.log('[' + new Date().toUTCString() + '] ', "get-miner-path", message.payload);
+					$('#miner_path').html(message.payload);
 
-			// Get the coins json and cache it locally
-			astilectron.sendMessage({
-				name: "get-coins-content",
-				payload: ""
-			}, function(message) {
-				var parsed = $.parseJSON(message.payload);
-				console.log('[' + new Date().toUTCString() + '] ', "get-coins-content", parsed);
-				firstrun.coinsContent = parsed;
+					// Get the miner type
+					astilectron.sendMessage({name: "get-miner-type", payload: ""}, function(message) {
+						console.log('[' + new Date().toUTCString() + '] ', "get-miner-type", message.payload);
+						firstrun.miner_type = message.payload;
 
-				firstrun.bindEvents();
-				firstrun.listen();
+						// Get the coins json and cache it locally
+						astilectron.sendMessage({
+							name: "get-coins-content",
+							payload: ""
+						}, function(message) {
+							var parsed = $.parseJSON(message.payload);
+							console.log('[' + new Date().toUTCString() + '] ', "get-coins-content", parsed);
+							firstrun.coinsContent = parsed;
+
+							firstrun.bindEvents();
+							firstrun.listen();
+						});
+					});
+				});
 			});
 		});
 	},
@@ -108,21 +116,28 @@ let firstrun = {
 			}
 			// render the other coins that can be mined
 			if (id == 'other-currencies') {
-				var coins = firstrun.coinsContent.coins.filter(function(el) { // remove bloc
+				// remove bloc
+				var coins = firstrun.coinsContent.coins.filter(function(el) {
 					return el.coin_type !== 'bloc';
 				});
-				coins = coins.map(function(el) { // add name and abbreviation keys
+				// remove the coins that are not supported by the current miner
+				coins = coins.filter(function(el) {
+					const key = shared.minersMapping(firstrun.miner_type);
+					return true === firstrun.coinsContent[key][el.coin_type];
+				});
+				// add the keys
+				coins = coins.map(function(el) {
 					el.name          = firstrun.coinsContent.names[el.coin_type];
+					el.icon          = firstrun.coinsContent.icons[el.coin_type];
 					el.abbreviation  = firstrun.coinsContent.abbreviation[el.coin_type];
 					el.xmrig_algo    = firstrun.coinsContent.xmrigAlgo[el.coin_type];
 					el.xmrig_variant = firstrun.coinsContent.xmrigVariant[el.coin_type];
 					return el;
 				});
-				let html;
-				html = $.fn.tmpl("tmpl-coins-title", coins);
-				$('#coins-title').html(html);
-				html = $.fn.tmpl("tmpl-coins", coins);
-				$('#currencies-selector').html(html);
+				let html1 = $.fn.tmpl("tmpl-coins-title", coins);
+				$('#coins-title').html(html1);
+				let html2 = $.fn.tmpl("tmpl-coins", coins);
+				$('#currencies-selector').html(html2);
 
 				// Events to mine other currencies buttons
 				$('#other-currencies .currency-btn').off('click').on('click', function() {
@@ -199,6 +214,7 @@ let firstrun = {
 		firstrun.xmrig_algo    = firstrun.coinsContent.xmrigAlgo[bloc_key];
 		firstrun.xmrig_variant = firstrun.coinsContent.xmrigVariant[bloc_key];
 	},
+	miner_type: "",
 	coin_type: "",
 	coin_algo: "",
 	xmrig_algo: "",

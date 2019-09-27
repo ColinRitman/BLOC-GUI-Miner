@@ -6,7 +6,7 @@
     },
     {
       "coin_type": "turtlecoin",
-      "coin_algo": "turtlecoin"
+      "coin_algo": "turtlecoin_xmrstak_notsupported"
     },
     {
       "coin_type": "ryo",
@@ -19,49 +19,226 @@
     {
       "coin_type": "monero",
       "coin_algo": "monero"
+    },
+    {
+      "coin_type": "loki",
+      "coin_algo": "loki_xmrstak_notsupported"
+    },
+    {
+      "coin_type": "conceal",
+      "coin_algo": "cryptonight_conceal"
+    },
+    {
+      "coin_type": "sumokoin",
+      "coin_algo": "cryptonight_r"
+    },
+    {
+      "coin_type": "graft",
+      "coin_algo": "graft"
+    },
+    {
+      "coin_type": "qrl",
+      "coin_algo": "qrl"
+    },
+    {
+      "coin_type": "lethean",
+      "coin_algo": "lethean"
+    },
+    {
+      "coin_type": "x-cash",
+      "coin_algo": "cryptonight_v8_double"
+    },
+    {
+      "coin_type": "masari",
+      "coin_algo": "cryptonight_v8_half"
+    },
+    {
+      "coin_type": "tube",
+      "coin_algo": "cryptonight_bittube2"
+    },
+    {
+      "coin_type": "aeon",
+      "coin_algo": "aeon7"
+    },
+    {
+      "coin_type": "arqma",
+      "coin_algo": "cryptonight_turtle"
+    },
+    {
+      "coin_type": "iridium",
+      "coin_algo": "cryptonight_turtle"
     }
   ],
+  "xmrigSupport": {
+    "bloc": true,
+    "turtlecoin": true,
+    "ryo": true,
+    "haven": true,
+    "monero": true,
+    "loki": true,
+    "conceal": false,
+    "sumokoin": true,
+    "graft": true,
+    "qrl": true,
+    "lethean": true,
+    "x-cash": true,
+    "masari": true,
+    "tube": true,
+    "aeon": true,
+    "arqma": true,
+    "iridium": true
+  },
+  "xmrStakSupport": {
+    "bloc": true,
+    "turtlecoin": false,
+    "ryo": true,
+    "haven": true,
+    "monero": true,
+    "loki": false,
+    "conceal": true,
+    "sumokoin": true,
+    "graft": true,
+    "qrl": true,
+    "lethean": true,
+    "x-cash": true,
+    "masari": true,
+    "tube": true,
+    "aeon": true,
+    "arqma": true,
+    "iridium": true
+  },
   "xmrigAlgo": {
     "bloc": "cn-heavy/xhv",
     "turtlecoin": "argon2/chukwa",
     "ryo": "cn/gpu",
     "haven": "cn-heavy/xhv",
-    "monero": "cn/r"
+    "monero": "cn/r",
+    "loki": "rx/loki",
+    "conceal": "cn/conceal_xmrig_notsupported",
+    "sumokoin": "cn/r",
+    "graft": "cn/rwz",
+    "qrl": "cn/1",
+    "lethean": "cn/r",
+    "x-cash": "cn/double",
+    "masari": "cn/half",
+    "tube": "cn-heavy/tube",
+    "aeon": "cn-lite/1",
+    "arqma": "cn-pico",
+    "iridium": "cn-pico"
   },
   "xmrigVariant": {
     "bloc": "xhv",
     "turtlecoin": "1",
     "ryo": "1",
     "haven": "xhv",
-    "monero": "xmr"
+    "monero": "xmr",
+    "loki": "loki",
+    "conceal": "ccx",
+    "sumokoin": "sumo",
+    "graft": "graft",
+    "qrl": "1",
+    "lethean": "lethean",
+    "x-cash": "x-cash",
+    "masari": "masari",
+    "tube": "tube",
+    "aeon": "aeon",
+    "arqma": "arqma",
+    "iridium": "arqma"
   },
   "names": {
     "bloc": "BLOC",
     "turtlecoin": "TurtleCoin",
     "ryo": "RYO",
     "haven": "Haven",
-    "monero": "Monero"
+    "monero": "Monero",
+    "loki": "Loki",
+    "conceal": "Conceal Network",
+    "sumokoin": "Sumokoin",
+    "graft": "GRAFT",
+    "qrl": "Quantum Resistant Ledger",
+    "lethean": "Lethean",
+    "x-cash": "X-CASH",
+    "masari": "Masari",
+    "tube": "Tube",
+    "aeon": "AEON",
+    "arqma": "ArQmA",
+    "iridium": "Iridium"
+  },
+  "icons": {
+    "bloc": "static/img/coins-icons/bloc.png",
+    "turtlecoin": "static/img/coins-icons/turtlecoin.png",
+    "ryo": "static/img/coins-icons/ryo.png",
+    "haven": "static/img/coins-icons/haven.png",
+    "monero": "static/img/coins-icons/monero.png",
+    "loki": "static/img/coins-icons/loki.png",
+    "conceal": "static/img/coins-icons/conceal.png",
+    "sumokoin": "static/img/coins-icons/sumokoin.png",
+    "graft": "static/img/coins-icons/graft.png",
+    "qrl": "static/img/coins-icons/qrl.png",
+    "lethean": "static/img/coins-icons/lethean.png",
+    "x-cash": "static/img/coins-icons/xcash.png",
+    "masari": "static/img/coins-icons/masari.png",
+    "tube": "static/img/coins-icons/tube.png",
+    "aeon": "static/img/coins-icons/aeon.png",
+    "arqma": "static/img/coins-icons/arqma.png",
+    "iridium": "static/img/coins-icons/iridium.png"
   },
   "abbreviation": {
     "bloc": "BLOC",
     "turtlecoin": "TRTL",
     "ryo": "RYO",
     "haven": "XHV",
-    "monero": "XMR"
+    "monero": "XMR",
+    "loki": "LOKI",
+    "conceal": "CCX",
+    "sumokoin": "SUMO",
+    "graft": "GRFT",
+    "qrl": "QRL",
+    "lethean": "LTHN",
+    "x-cash": "XCASH",
+    "masari": "MSR",
+    "tube": "TUBE",
+    "aeon": "AEON",
+    "arqma": "ARQ",
+    "iridium": "IRD"
   },
   "addressPrefix": {
     "bloc": "abLoc",
     "turtlecoin": "TRTL",
     "ryo": "RYoL",
     "haven": "hvx",
-    "monero": "4"
+    "monero": "4",
+    "loki": "L",
+    "conceal": "ccx",
+    "sumokoin": "Sumo",
+    "graft": "grft",
+    "qrl": "qrl",
+    "lethean": "iz",
+    "x-cash": "XCA1",
+    "masari": "5",
+    "tube": "b",
+    "aeon": "W",
+    "arqma": "ar",
+    "iridium": "ir"
   },
   "addressValidation": {
     "bloc": "^abLoc([a-zA-Z0-9]{94}|[a-zA-Z0-9]{182})$",
-    "turtlecoin": "^TRTL([a-zA-Z0-9]{95})$",
-    "ryo": "^RYoL([a-zA-Z0-9]{95})$",
+    "turtlecoin": "^TRTL([a-zA-Z0-9]{95}|[a-zA-Z0-9]{183})$",
+    "ryo": "^RYo([a-zA-Z0-9]{96}|[a-zA-Z0-9]{103})$",
     "haven": "^hvx([a-zA-Z0-9]{95})$",
-    "monero": "^4([a-zA-Z0-9]{94})$"
+    "monero": "^4([a-zA-Z0-9]{94}|[a-zA-Z0-9]{105})$",
+    "loki": "^L([a-zA-Z0-9]{94}|[a-zA-Z0-9]{105})$",
+    "conceal": "^ccx([a-zA-Z0-9]{95})$",
+    "sumokoin": "^Su([a-zA-Z0-9]{97}|[a-zA-Z0-9]{96})$",
+    "graft": "^G([a-zA-Z0-9]{94})$",
+    "qrl": "^Q([a-zA-Z0-9]{78})$",
+    "lethean": "^iz([a-zA-Z0-9]{95})$",
+    "x-cash": "^XCA1([a-zA-Z0-9]{94})$",
+    "masari": "^5([a-zA-Z0-9]{94})$",
+    "tube": "^b([a-zA-Z0-9]{96})$",
+    "aeon": "^W([a-zA-Z0-9]{96})$",
+    "arqma": "^ar([a-zA-Z0-9]{95})$",
+    "iridium": "^ir([a-zA-Z0-9]{95})$"
   },
   "mainBackground": {
     "bloc": {
@@ -83,6 +260,54 @@
     "monero": {
       "image": "static/img/monero/bg-miner-mining.png", 
       "color": "#1a1a1a"
+    },
+    "loki": {
+      "image": "static/img/loki/bg-miner-mining.png", 
+      "color": "#1a1a1a"
+    },
+    "conceal": {
+      "image": "static/img/conceal/bg-miner-mining.png", 
+      "color": "#1a1a1a"
+    },
+    "sumokoin": {
+      "image": "static/img/sumokoin/bg-miner-mining.png", 
+      "color": "#1a1a1a"
+    },
+    "graft": {
+      "image": "static/img/graft/bg-miner-mining.png", 
+      "color": "#274258"
+    },
+    "qrl": {
+      "image": "static/img/qrl/bg-miner-mining.png", 
+      "color": "#185587"
+    },
+    "lethean": {
+      "image": "static/img/lethean/bg-miner-mining.png", 
+      "color": "#0f131c"
+    },
+    "x-cash": {
+      "image": "static/img/xcash/bg-miner-mining.png", 
+      "color": "#1c67a3"
+    },
+    "masari": {
+      "image": "static/img/masari/bg-miner-mining.png", 
+      "color": "#071109"
+    },
+    "tube": {
+      "image": "static/img/tube/bg-miner-mining.png", 
+      "color": "#343434"
+    },
+    "aeon": {
+      "image": "static/img/aeon/bg-miner-mining.png", 
+      "color": "#030c32"
+    },
+    "arqma": {
+      "image": "static/img/arqma/bg-miner-mining.png", 
+      "color": "#141423"
+    },
+    "iridium": {
+      "image": "static/img/arqma/bg-miner-mining.png", 
+      "color": "#a50606"
     }
   },
   "textColor": {
@@ -90,28 +315,75 @@
     "turtlecoin": "#00ff00",
     "ryo": "#009cff",
     "haven": "#00ff9c",
-    "monero": "#ff5a00"
+    "monero": "#ff5a00",
+    "loki": "#7bbc2e",
+    "conceal": "#fea320",
+    "sumokoin": "#20fef1",
+    "graft": "#fe4200",
+    "qrl": "#3db4ff",
+    "lethean": "#46bbbd",
+    "x-cash": "#b34100",
+    "masari": "#51b763",
+    "tube": "#343434",
+    "aeon": "#61bdd2",
+    "arqma": "#e2deb8",
+    "iridium": "#ffed00"
   },
   "boxColor": {
     "bloc": "#090a31",
     "turtlecoin": "#021203",
     "ryo": "#092131",
     "haven": "#093123",
-    "monero": "#222323"
+    "monero": "#222323",
+    "loki": "#141414",
+    "conceal": "#141414",
+    "sumokoin": "#0c0a67",
+    "graft": "#23242c",
+    "qrl": "#42525d",
+    "lethean": "#0f141d",
+    "x-cash": "#01232b",
+    "masari": "#404e51",
+    "tube": "#007eb9",
+    "aeon": "#174450",
+    "arqma": "#3c0f90",
+    "iridium": "#dd592c"
   },
   "boxBorder": {
     "bloc": "#222",
     "turtlecoin": "#222",
     "ryo": "#222",
     "haven": "#222",
-    "monero": "#222"
+    "monero": "#222",
+    "loki": "#222",
+    "sumokoin": "#222",
+    "graft": "#222",
+    "qrl": "#222",
+    "lethean": "#222",
+    "x-cash": "#222",
+    "masari": "#222",
+    "tube": "#222",
+    "aeon": "#222",
+    "arqma": "#222",
+    "iridium": "#222"
   },
   "logo": {
     "bloc": "static/img/miner/miner-big-logo.png",
     "turtlecoin": "static/img/turtlecoin/logo.png",
     "ryo": "static/img/RYO/logo.png",
     "haven": "static/img/haven/logo.png",
-    "monero": "static/img/monero/logo.png"
+    "monero": "static/img/monero/logo.png",
+    "loki": "static/img/loki/logo.png",
+    "conceal": "static/img/conceal/logo.png",
+    "sumokoin": "static/img/sumokoin/logo.png",
+    "graft": "static/img/graft/logo.png",
+    "qrl": "static/img/qrl/logo.png",
+    "lethean": "static/img/lethean/logo.png",
+    "x-cash": "static/img/xcash/logo.png",
+    "masari": "static/img/masari/logo.png",
+    "tube": "static/img/tube/logo.png",
+    "aeon": "static/img/aeon/logo.png",
+    "arqma": "static/img/arqma/logo.png",
+    "iridium": "static/img/iridium/logo.png"
   },
   "downloadPage": {
       "bloc": {
@@ -133,6 +405,54 @@
       "monero": {
         "title": "Monero Applications", 
         "link": "https://web.getmonero.org/downloads/"
+      },
+      "loki": {
+        "title": "Loki Applications", 
+        "link": "https://loki.network/getstarted/"
+      },
+      "conceal": {
+        "title": "Conceal Network Applications", 
+        "link": "https://conceal.network/#wallets"
+      },
+      "sumokoin": {
+        "title": "Sumokoin Applications", 
+        "link": "https://www.sumokoin.org"
+      },
+      "graft": {
+        "title": "Quantum Resistant Ledger App", 
+        "link": "https://www.graft.network/downloads/"
+      },
+      "qrl": {
+        "title": "QRL Applications", 
+        "link": "https://www.theqrl.org"
+      },
+      "lethean": {
+        "title": "Lethean Applications", 
+        "link": "https://lethean.io/"
+      },
+      "x-cash": {
+        "title": "X-CASH Applications", 
+        "link": "https://x-network.io/xcash/downloads/"
+      },
+      "masari": {
+        "title": "Masari Applications", 
+        "link": "https://getmasari.org/#downloads"
+      },
+      "tube": {
+        "title": "BitTube Applications", 
+        "link": "https://bittubeapp.com/products.html"
+      },
+      "aeon": {
+        "title": "AEON Applications", 
+        "link": "http://www.aeon.cash/#downloads"
+      },
+      "arqma": {
+        "title": "ARQMA Applications", 
+        "link": "https://arqma.com/download/"
+      },
+      "iridium": {
+        "title": "Iridium Applications", 
+        "link": "https://ird.cash/#custompage1"
       }
   },
   "coinGeckoLinks": {
@@ -140,7 +460,19 @@
     "turtlecoin": "https://www.coingecko.com/en/coins/turtlecoin",
     "ryo": "https://www.coingecko.com/en/coins/ryo-currency",
     "haven": "https://www.coingecko.com/en/coins/haven",
-    "monero": "https://www.coingecko.com/en/coins/monero"
+    "monero": "https://www.coingecko.com/en/coins/monero",
+    "loki": "https://www.coingecko.com/en/coins/loki-network",
+    "conceal": "https://www.coingecko.com/en/coins/conceal",
+    "sumokoin": "https://www.coingecko.com/en/coins/sumokoin",
+    "graft": "https://www.coingecko.com/en/coins/graft-blockchain",
+    "qrl": "https://www.coingecko.com/en/coins/quantum-resistant-ledger",
+    "lethean": "https://www.coingecko.com/en/coins/lethean",
+    "x-cash": "https://www.coingecko.com/en/coins/x-cash",
+    "masari": "https://www.coingecko.com/en/coins/masari",
+    "tube": "https://www.coingecko.com/en/coins/bittube",
+    "aeon": "https://www.coingecko.com/en/coins/aeon",
+    "arqma": "https://www.coingecko.com/en/coins/arqma",
+    "iridium": "https://www.coingecko.com/en/coins/iridium"
   },
   "socialLinks": {
     "bloc": {
@@ -201,6 +533,166 @@
         {"link": "https://github.com/monero-project", "img": "static/img/miner/network_icon_github.png"},
         {"link": "https://reddit.com/r/monero", "img": "static/img/miner/network_icon_website.png"},
         {"link": "https://monero.stackexchange.com/", "img": "static/img/miner/network_icon_website.png"}
+      ]
+    },
+    "loki": {
+      "title": "Social Network", 
+      "links": [
+        {"link": "https://discordapp.com/invite/67GXfD6", "img": "static/img/miner/network_icon_discord.png"},
+        {"link": "https://loki.network/blog/", "img": "static/img/miner/network_icon_medium.png"},
+        {"link": "https://t.me/joinchat/DeNvR0JJ4JPn6TVSQjCsZQ", "img": "static/img/miner/network_icon_telegram.png"},
+        {"link": "https://bitcointalk.org/index.php?topic=3016125.0", "img": "static/img/miner/network_icon_bitcointalk.png"},
+        {"link": "https://github.com/loki-project/", "img": "static/img/miner/network_icon_github.png"},
+        {"link": "https://twitter.com/loki_project", "img": "static/img/miner/network_icon_twatter.png"},
+        {"link": "https://www.reddit.com/r/LokiProject/", "img": "static/img/miner/network_icon_website.png"},
+        {"link": "https://www.facebook.com/LokiNetwork/", "img": "static/img/miner/network_icon_facbook.png"},
+        {"link": "https://www.youtube.com/lokinetwork", "img": "static/img/miner/network_icon_yuotube.png"}
+      ]
+    },
+    "conceal": {
+      "title": "Social Network", 
+      "links": [
+        {"link": "https://discord.conceal.network/", "img": "static/img/miner/network_icon_discord.png"},
+        {"link": "https://medium.com/@ConcealNetwork", "img": "static/img/miner/network_icon_medium.png"},
+        {"link": "https://t.co/55klBHKGUR", "img": "static/img/miner/network_icon_telegram.png"},
+        {"link": "https://bitcointalk.org/index.php?topic=5086106", "img": "static/img/miner/network_icon_bitcointalk.png"},
+        {"link": "https://github.com/ConcealNetwork", "img": "static/img/miner/network_icon_github.png"},
+        {"link": "https://twitter.com/ConcealNetwork", "img": "static/img/miner/network_icon_twatter.png"},
+        {"link": "https://conceal.network", "img": "static/img/miner/network_icon_website.png"}
+      ]
+    },
+    "sumokoin": {
+      "title": "Social Network", 
+      "links": [
+        {"link": "https://discord.gg/heDXTvP", "img": "static/img/miner/network_icon_discord.png"},
+        {"link": "https://medium.com/sumokoin", "img": "static/img/miner/network_icon_medium.png"},
+        {"link": "https://t.me/joinchat/F8RH2kPmFCnA-igHBKSCAA", "img": "static/img/miner/network_icon_telegram.png"},
+        {"link": "https://bitcointalk.org/index.php?topic=1905086.0", "img": "static/img/miner/network_icon_bitcointalk.png"},
+        {"link": "https://github.com/sumoprojects/sumokoin", "img": "static/img/miner/network_icon_github.png"},
+        {"link": "https://twitter.com/Sumokoin", "img": "static/img/miner/network_icon_twatter.png"},
+        {"link": "https://www.sumokoin.org", "img": "static/img/miner/network_icon_website.png"},
+        {"link": "https://www.facebook.com/sumokoin/", "img": "static/img/miner/network_icon_facbook.png"}
+      ]
+    },
+    "graft": {
+      "title": "Social Network", 
+      "links": [
+        {"link": "https://discord.gg/BuZr5fy", "img": "static/img/miner/network_icon_discord.png"},
+        {"link": "https://medium.com/@graftnetwork", "img": "static/img/miner/network_icon_medium.png"},
+        {"link": "https://t.me/graftnetofficial", "img": "static/img/miner/network_icon_telegram.png"},
+        {"link": "https://bitcointalk.org/index.php?topic=2115188", "img": "static/img/miner/network_icon_bitcointalk.png"},
+        {"link": "https://github.com/graft-project/graft-ng", "img": "static/img/miner/network_icon_github.png"},
+        {"link": "https://twitter.com/graftnetwork", "img": "static/img/miner/network_icon_twatter.png"},
+        {"link": "https://www.graft.network", "img": "static/img/miner/network_icon_website.png"},
+        {"link": "https://www.facebook.com/Graft-460292407666720/", "img": "static/img/miner/network_icon_facbook.png"},
+        {"link": "https://www.youtube.com/channel/UCoMSpYdhQDDhhRcyilyyqtw", "img": "static/img/miner/network_icon_yuotube.png"},
+        {"link": "https://www.instagram.com/graftnetwork/", "img": "static/img/miner/network_icon_instgram.png"}
+      ]
+    },
+    "qrl": {
+      "title": "Social Network", 
+      "links": [
+        {"link": "https://discord.gg/jBT6BEp", "img": "static/img/miner/network_icon_discord.png"},
+        {"link": "https://www.medium.com/the-quantum-resistant-ledger/", "img": "static/img/miner/network_icon_medium.png"},
+        {"link": "https://bitcointalk.org/index.php?topic=2115188", "img": "static/img/miner/network_icon_bitcointalk.png"},
+        {"link": "https://github.com/theQRL/QRL/", "img": "static/img/miner/network_icon_github.png"},
+        {"link": "https://twitter.com/qrledger", "img": "static/img/miner/network_icon_twatter.png"},
+        {"link": "http://theqrl.org", "img": "static/img/miner/network_icon_website.png"},
+        {"link": "https://www.reddit.com/r/qrl", "img": "static/img/miner/network_icon_website.png"}
+      ]
+    },
+    "lethean": {
+      "title": "Social Network", 
+      "links": [
+        {"link": "https://discord.gg/pfgT2Kz", "img": "static/img/miner/network_icon_discord.png"},
+        {"link": "https://medium.com/letheanvpn", "img": "static/img/miner/network_icon_medium.png"},
+        {"link": "https://bitcointalk.org/index.php?topic=4902692.0", "img": "static/img/miner/network_icon_bitcointalk.png"},
+        {"link": "https://github.com/LetheanMovement", "img": "static/img/miner/network_icon_github.png"},
+        {"link": "https://twitter.com/LetheanVPN", "img": "static/img/miner/network_icon_twatter.png"},
+        {"link": "https://lethean.io/", "img": "static/img/miner/network_icon_website.png"},
+        {"link": "https://reddit.com/r/lethean", "img": "static/img/miner/network_icon_website.png"},
+        {"link": "https://www.facebook.com/lethean.io/", "img": "static/img/miner/network_icon_facbook.png"},
+        {"link": "https://www.youtube.com/channel/UCKa_Nw7JysDxgcBJYnraUVA", "img": "static/img/miner/network_icon_yuotube.png"},
+        {"link": "https://t.me/letheanVPN", "img": "static/img/miner/network_icon_telegram.png"}
+      ]
+    },
+    "x-cash": {
+      "title": "Social Network", 
+      "links": [
+        {"link": "https://discordapp.com/invite/4CAahnd", "img": "static/img/miner/network_icon_discord.png"},
+        {"link": "https://medium.com/x-cash", "img": "static/img/miner/network_icon_medium.png"},
+        {"link": "https://bitcointalk.org/index.php?topic=4781246.0", "img": "static/img/miner/network_icon_bitcointalk.png"},
+        {"link": "https://github.com/X-CASH-official", "img": "static/img/miner/network_icon_github.png"},
+        {"link": "https://twitter.com/XCashCrypto", "img": "static/img/miner/network_icon_twatter.png"},
+        {"link": "https://x-network.io/xcash/", "img": "static/img/miner/network_icon_website.png"},
+        {"link": "https://www.reddit.com/r/xcash/", "img": "static/img/miner/network_icon_website.png"},
+        {"link": "https://t.me/xcashglobal", "img": "static/img/miner/network_icon_telegram.png"}
+      ]
+    },
+    "masari": {
+      "title": "Social Network", 
+      "links": [
+        {"link": "https://discordapp.com/invite/sMCwMqs", "img": "static/img/miner/network_icon_discord.png"},
+        {"link": "https://medium.com/@officialmasari", "img": "static/img/miner/network_icon_medium.png"},
+        {"link": "https://bitcointalk.org/index.php?topic=2159114.0", "img": "static/img/miner/network_icon_bitcointalk.png"},
+        {"link": "https://github.com/masari-project", "img": "static/img/miner/network_icon_github.png"},
+        {"link": "https://twitter.com/masaricurrency", "img": "static/img/miner/network_icon_twatter.png"},
+        {"link": "https://www.getmasari.org/", "img": "static/img/miner/network_icon_website.png"},
+        {"link": "https://reddit.com/r/masari", "img": "static/img/miner/network_icon_website.png"},
+        {"link": "https://t.me/masaricurrency", "img": "static/img/miner/network_icon_telegram.png"}
+      ]
+    },
+    "tube": {
+      "title": "Social Network", 
+      "links": [
+        {"link": "https://discordapp.com/invite/fBNQRQV", "img": "static/img/miner/network_icon_discord.png"},
+        {"link": "https://blog.bittubeapp.com/main", "img": "static/img/miner/network_icon_medium.png"},
+        {"link": "https://bitcointalk.org/index.php?topic=2856278.0", "img": "static/img/miner/network_icon_bitcointalk.png"},
+        {"link": "https://github.com/ipbc-dev", "img": "static/img/miner/network_icon_github.png"},
+        {"link": "https://twitter.com/BitTubeApp", "img": "static/img/miner/network_icon_twatter.png"},
+        {"link": "https://bittubeapp.com/", "img": "static/img/miner/network_icon_website.png"},
+        {"link": "https://business.facebook.com/bit.tube.official/?business_id=973727166129897", "img": "static/img/miner/network_icon_facbook.png"},
+        {"link": "https://t.me/bittubeapp", "img": "static/img/miner/network_icon_telegram.png"}
+      ]
+    },
+    "aeon": {
+      "title": "Social Network", 
+      "links": [
+        {"link": "https://discordapp.com/invite/TM8mEsx", "img": "static/img/miner/network_icon_discord.png"},
+        {"link": "https://medium.com/@AEON_Community", "img": "static/img/miner/network_icon_medium.png"},
+        {"link": "https://bitcointalk.org/index.php?topic=641696.0", "img": "static/img/miner/network_icon_bitcointalk.png"},
+        {"link": "https://github.com/aeonix", "img": "static/img/miner/network_icon_github.png"},
+        {"link": "https://twitter.com/AeonCoin", "img": "static/img/miner/network_icon_twatter.png"},
+        {"link": "http://www.aeon.cash/", "img": "static/img/miner/network_icon_website.png"},
+        {"link": "https://www.reddit.com/r/aeon", "img": "static/img/miner/network_icon_website.png"},
+        {"link": "https://t.me/AEONgroup", "img": "static/img/miner/network_icon_telegram.png"}
+      ]
+    },
+    "arqma": {
+      "title": "Social Network", 
+      "links": [
+        {"link": "https://discordapp.com/invite/s9BQpJT", "img": "static/img/miner/network_icon_discord.png"},
+        {"link": "https://arqma.com/", "img": "static/img/miner/network_icon_medium.png"},
+        {"link": "https://bitcointalk.org/index.php?topic=4474605.0", "img": "static/img/miner/network_icon_bitcointalk.png"},
+        {"link": "https://github.com/arqma", "img": "static/img/miner/network_icon_github.png"},
+        {"link": "https://twitter.com/ArQmA_Network", "img": "static/img/miner/network_icon_twatter.png"},
+        {"link": "https://arqma.com/", "img": "static/img/miner/network_icon_website.png"},
+        {"link": "https://reddit.com/r/arqma", "img": "static/img/miner/network_icon_website.png"},
+        {"link": "https://t.me/joinchat/HNpOMRIiNSoCn0zYrAOofw", "img": "static/img/miner/network_icon_telegram.png"}
+      ]
+    },
+    "iridium": {
+      "title": "Social Network", 
+      "links": [
+        {"link": "https://discordapp.com/invite/6y2p6Qj", "img": "static/img/miner/network_icon_discord.png"},
+        {"link": "https://ird.cash/category/news/", "img": "static/img/miner/network_icon_medium.png"},
+        {"link": "https://bitcointalk.org/index.php?topic=2150442.0", "img": "static/img/miner/network_icon_bitcointalk.png"},
+        {"link": "https://github.com/iridiumdev", "img": "static/img/miner/network_icon_github.png"},
+        {"link": "https://twitter.com/iridiumCash", "img": "static/img/miner/network_icon_twatter.png"},
+        {"link": "https://ird.cash/", "img": "static/img/miner/network_icon_website.png"},
+        {"link": "https://reddit.com/r/IridiumCoin", "img": "static/img/miner/network_icon_website.png"},
+        {"link": "https://t.me/joinchat/GizWw0sK9LW8DAu4hAeWnA", "img": "static/img/miner/network_icon_telegram.png"},
+        {"link": "https://www.facebook.com/207676106483596", "img": "static/img/miner/network_icon_facbook.png"}
       ]
     }
   },
@@ -265,6 +757,146 @@
         {"link": "https://getmonero.org/resources/about/", "text": "- About Monero"},
         {"link": "https://getmonero.org/resources/developer-guides/", "text": "- Developer Guides"},
         {"link": "https://getmonero.org/resources/user-guides/", "text": "- User Guides"}
+      ]
+    },
+    "loki": {
+      "title": "Loki Network", 
+      "links": [
+        {"link": "https://loki.network", "text": "- Official Website"},
+        {"link": "https://loki.network/getstarted/", "text": "- Get Started"},
+        {"link": "http://lokiblocks.com/", "text": "- Block Explorer"},
+        {"link": "https://docs.loki.network", "text": "- Docs"},
+        {"link": "https://loki.network/media-appearances/", "text": "- Media"},
+        {"link": "https://loki.network/blog/", "text": "- Blog"},
+        {"link": "https://docs.loki.network/FAQ/", "text": "- FAQ"}
+      ]
+    },
+    "conceal": {
+      "title": "Conceal Network", 
+      "links": [
+        {"link": "https://conceal.network", "text": "- Official Website"},
+        {"link": "https://conceal.cloud", "text": "- Conceal Cloud"},
+        {"link": "https://explorer.conceal.network", "text": "- Block Explorer"},
+        {"link": "https://conceal.network/wiki/doku.php?id=start", "text": "- Docs"},
+        {"link": "https://medium.com/@ConcealNetwork", "text": "- Blog"},
+        {"link": "https://conceal.network/#exchanges", "text": "- Exchanges"}
+      ]
+    },
+    "sumokoin": {
+      "title": "Sumokoin Network", 
+      "links": [
+        {"link": "https://www.sumokoin.org", "text": "- Official Website"},
+        {"link": "https://miningpoolstats.stream/sumokoin", "text": "- Mining Pools"},
+        {"link": "https://explorer.sumokoin.com/", "text": "- Block Explorer"},
+        {"link": "https://www.sumokoin.org", "text": "- Docs"},
+        {"link": "https://medium.com/sumokoin", "text": "- Blog"}
+      ]
+    },
+    "graft": {
+      "title": "GRAFT Network", 
+      "links": [
+        {"link": "https://www.graft.network", "text": "- Official website"},
+        {"link": "https://www.graft.network/frequently-asked-questions/", "text": "- FAQ"},
+        {"link": "http://blockexplorer.graft.network/", "text": "- Block Explorer"},
+        {"link": "https://www.graft.network/cryptofind/", "text": "- CryptoFind app"},
+        {"link": "https://www.graft.network/mining-guide/", "text": "- Mining Guide"},
+        {"link": "https://www.graft.network/downloads/", "text": "- GRAFT Wallet"},
+        {"link": "https://www.graft.network/2019/08/08/exchange-broker-network-layer-and-collateralized-dex/", "text": "- DEX"}
+      ]
+    },
+    "qrl": {
+      "title": "QRL Network", 
+      "links": [
+        {"link": "https://www.theqrl.org", "text": "- Official website"},
+        {"link": "https://docs.theqrl.org", "text": "- Documentation"},
+        {"link": "https://explorer.theqrl.org", "text": "- Block Explorer"},
+        {"link": "https://medium.com/the-quantum-resistant-ledger", "text": "- Announcements"},
+        {"link": "https://docs.theqrl.org/mining/mining/", "text": "- Mining Guide"}
+      ]
+    },
+    "lethean": {
+      "title": "Lethean Network", 
+      "links": [
+        {"link": "https://lethean.io/", "text": "- Official website"},
+        {"link": "https://lethean.io/vpn-and-wallets", "text": "- VPN & Wallets"},
+        {"link": "https://nodes.lethean.io/", "text": "- Lethean Nodes list"},
+        {"link": "https://pools.lethean.io/", "text": "- Pool list"},
+        {"link": "https://lethean.io/exit-node", "text": "- Exit Node Technology"},
+        {"link": "https://lethean.io/additional-resources", "text": "- Additional Ressources"},
+        {"link": "https://lethean.io/vpn-whitepaper", "text": "- White papers"},
+        {"link": "https://monitor.lethean.io/zabbix.php?action=dashboard.view&dashboardid=8&fullscreen=1&period=25920000", "text": "- Blockchain Monitor"},
+        {"link": "http://explorer.lethean.io", "text": "- Block Explorer"}
+      ]
+    },
+    "x-cash": {
+      "title": "X-CASH Network", 
+      "links": [
+        {"link": "https://x-network.io/xcash/", "text": "- Official website"},
+        {"link": "https://x-network.io/xcash/mining/", "text": "- Mining"},
+        {"link": "https://x-network.io/whitepaper/", "text": "- Documentation"},
+        {"link": "https://x-network.io/xblockchain/", "text": "- X-Blockchain"},
+        {"link": "https://x-bank.io", "text": "- X-Bank"},
+        {"link": "https://xcashteam.atlassian.net/servicedesk/", "text": "- Support"},
+        {"link": "https://x-network.io", "text": "- X-Network"},
+        {"link": "https://explorer.x-cash.org/", "text": "- Block Explorer"}
+      ]
+    },
+    "masari": {
+      "title": "Masari Network", 
+      "links": [
+        {"link": "https://getmasari.org/", "text": "- Official website"},
+        {"link": "https://getmasari.org/#downloads", "text": "- Downloads"},
+        {"link": "https://getmasari.org/#resources", "text": "- Ressources"},
+        {"link": "https://miningpoolstats.stream/masari", "text": "- Mining Pools"},
+        {"link": "https://explorer.getmasari.org/", "text": "- Block Explorer"},
+        {"link": "https://wallet.getmasari.org/", "text": "- Web wallet"},
+        {"link": "https://getmasari.org/guides", "text": "- Guides"},
+        {"link": "https://getmasari.org/masari-wallet-generator.html/", "text": "- Wallet Generator"}
+      ]
+    },
+    "tube": {
+      "title": "BitTube Network", 
+      "links": [
+        {"link": "https://bittubeapp.com", "text": "- Official website"},
+        {"link": "https://bittubeapp.com/products.html#", "text": "- Products"},
+        {"link": "https://wordpress.org/plugins/bittube-woocommerce-gateway/", "text": "- WooCommerce payment gateway"},
+        {"link": "https://bittubeapp.com/coin.html", "text": "- Coin details"},
+        {"link": "https://explorer.bit.tube", "text": "- Block Explorer"},
+        {"link": "https://bittubeapp.com/docs/tubepay", "text": "- Tube Pay API"},
+        {"link": "https://kb.bittubeapp.com/", "text": "- Guides"},
+        {"link": "https://bittubeapp.com/airtime.html", "text": "- AirTime"}
+      ]
+    },
+    "aeon": {
+      "title": "AEON Network", 
+      "links": [
+        {"link": "http://www.aeon.cash", "text": "- Official website"},
+        {"link": "http://www.aeon.cash/#downloads", "text": "- Downloads"},
+        {"link": "https://aeonstats.com/", "text": "- AEON Stats"},
+        {"link": "https://aeonblockexplorer.com/", "text": "- Block Explorer"},
+        {"link": "https://aeonblockchecker.ninja:8081/", "text": "- AEON Checker"},
+        {"link": "https://www.aeonfunding.com/proposalsy", "text": "- Funding System"},
+        {"link": "https://coinwik.org/Aeon", "text": "- AEON Wiki"}
+      ]
+    },
+    "arqma": {
+      "title": "ARQMA Network", 
+      "links": [
+        {"link": "https://arqma.com", "text": "- Official website"},
+        {"link": "https://arqma.com/pools-explorer/", "text": "- Mining Pools"},
+        {"link": "https://blockexplorer.arqma.com/", "text": "- Block Explorer"},
+        {"link": "https://myarqma.com/", "text": "- Web Wallet"},
+        {"link": "https://arqma.com/tech-spec/", "text": "- Tech Spec"},
+        {"link": "https://arqma.com/faq/", "text": "- FAQ"}
+      ]
+    },
+    "iridium": {
+      "title": "IRIDIUM Network", 
+      "links": [
+        {"link": "https://ird.cash", "text": "- Official website"},
+        {"link": "https://explorer.ird.cash/", "text": "- Block Explorer"},
+        {"link": "https://wiki.ird.cash", "text": "- Wiki"},
+        {"link": "https://ird.cash/market/", "text": "- Market"}
       ]
     }
   },
@@ -332,13 +964,165 @@
         {"icon": "static/img/whatsnext/img-08.png", "title": "Need more help ? We got you covered", "text": "If this is your first time hearing about Monero, we recommend starting by visiting the official <a href=\"https://web.getmonero.org\">GetMonero.org</a> website but also <a href=\"https://getmonero.org/resources/moneropedia/\">Moneropedia</a> and read precious informations."},
         {"icon": "static/img/whatsnext/img-09.png", "title": "Merchants & Services", "text": "Merchants of all kinds have come to value the financial privacy that Monero brings. <a href=\"https://web.getmonero.org/community/merchants/\">Click here</a> to see list of the merchants that we know of that currently accept Monero for their goods and services."}
       ]
+    },
+    "loki": {
+      "boxes": [
+        {"icon": "static/img/whatsnext/img-01.png", "title": "Visit your mining pool to know more", "text": "You get paid out based upon what the pool sets the min payout amount. A pool's min payout amount can vary from pool to pool. Click on the pool link to visit their website."},
+        {"icon": "static/img/whatsnext/img-02.png", "title": "Learn more about Loki", "text": "<a href=\"https://loki.network\">Loki</a> is a privacy network which will allow users to transact and communicate privately over the internet with the maximum amount of anonymity possible."},
+        {"icon": "static/img/whatsnext/img-03.png", "title": "Docs", "text": "Loki provides the means to transact and communicate privately and anonymously, using the decentralised nature of blockchain technology to create new methods of interacting with the internet."},
+        {"icon": "static/img/whatsnext/img-04.png", "title": "Join our amazing community.", "text": "Loki is nothing without it's amazing and friendly community. Come and socialise with us on the <a href=\"https://t.me/joinchat/DeNvR0JJ4JPn6TVSQjCsZQ\">Telegram Group</a> and <a href=\"https://www.reddit.com/r/LokiProject/\">Reddit</a>."},
+        {"icon": "static/img/whatsnext/img-05.png", "title": "Trading Loki on exchange", "text": "Buy and Sell Loki on following exchanges: <ul class=\"list-unstyled\"><li><a href=\"https://tradeogre.com/exchange/BTC-LOKI\">- TradeOgre</a></li><li><a href=\"https://www.kucoin.com/trade/LOKI-BTC\">- Kucoin</a></li></ul>"},
+        {"icon": "static/img/whatsnext/img-06.png", "title": "Follow Loki on social media", "text": "We are updating all our social network regulary, the best way to stay updated with Loki is to follow us on <a href=\"https://twitter.com/loki_project\">Twitter</a> or <a href=\"https://discordapp.com/invite/67GXfD6\">Discord</a>."},
+        {"icon": "static/img/whatsnext/img-07.png", "title": "Download Loki iOS & Android", "text": "Loki Wallet for android <a href=\"https://play.google.com/store/apps/details?id=network.loki.wallet&hl=en_US\">available in the Google Play store</a> but also an <a href=\"https://apps.apple.com/app/loki-wallet/id1465686522\">iOS wallet</a>"},
+        {"icon": "static/img/whatsnext/img-08.png", "title": "Need more help ? We got you covered", "text": "If this is your first time hearing about Loki, we recommend starting by visiting the official <a href=\"https://loki.network\">Loki.network</a> website but also <a href=\"https://docs.loki.network\">Loki Docs</a> and read precious informations."},
+        {"icon": "static/img/whatsnext/img-09.png", "title": "Merchants & Services", "text": "Merchants of all kinds have come to value the financial privacy that Loki brings. <a href=\"https://loki.network\">Click here</a> to see list of the merchants that we know of that currently accept Loki for their goods and services."}
+      ]
+    },
+    "conceal": {
+      "boxes": [
+        {"icon": "static/img/whatsnext/img-01.png", "title": "Visit your mining pool to know more", "text": "You get paid out based upon what the pool sets the min payout amount. A pool's min payout amount can vary from pool to pool. Click on the pool link to visit their website."},
+        {"icon": "static/img/whatsnext/img-02.png", "title": "Learn more about Conceal", "text": "<a href=\"https://conceal.network\">Conceal</a> is a decentralized blockchain bank, with deposits and investments paying interest rates, without involvement of financial institutions, powered by 100% open source code."},
+        {"icon": "static/img/whatsnext/img-03.png", "title": "Docs", "text": "Conceal.Network enables untraceable and anonymous messaging, and a secure way to transfer funds. Using a distributed public ledger, the sender and receiver are kept anonymous, a key concern in a post Snowden world."},
+        {"icon": "static/img/whatsnext/img-04.png", "title": "Join our amazing community.", "text": "Conceal is nothing without it's amazing and friendly community. Come and socialise with us on the <a href=\"https://t.co/55klBHKGUR\">Telegram Group</a> and <a href=\"https://www.reddit.com/r/ConcealNetwork/\">Reddit</a>."},
+        {"icon": "static/img/whatsnext/img-05.png", "title": "Trading Conceal on exchange", "text": "Buy and Sell Conceal on following <a href=\"https://conceal.network/#exchanges\">exchanges</a>: <ul class=\"list-unstyled\"><li><a href=\"https://www.hotbit.io/exchange?symbol=CCX_BTC\">- HotBit</a></li><li><a href=\"https://tradeogre.com/exchange/BTC-CCX\">- TradeOgre</a></li><li><a href=\"https://www.citex.co.kr/#/home\">- Citex.io</a></li></ul>"},
+        {"icon": "static/img/whatsnext/img-06.png", "title": "Follow Conceal on social media", "text": "We are updating all our social network regulary, the best way to stay updated with Conceal is to follow us on <a href=\"https://twitter.com/ConcealNetwork\">Twitter</a> or <a href=\"https://discord.conceal.network/\">Discord</a>."},
+        {"icon": "static/img/whatsnext/img-07.png", "title": "Download Conceal for Android", "text": "Conceal Wallet for android <a href=\"https://play.google.com/store/apps/details?id=com.ConcealNetwork.ConcealMobile\">available in the Google Play store</a>"},
+        {"icon": "static/img/whatsnext/img-08.png", "title": "Need more help ? We got you covered", "text": "If this is your first time hearing about Conceal, we recommend starting by visiting the official <a href=\"https://conceal.network\">Conceal.network</a> website but also <a href=\"https://conceal.network/wiki/doku.php?id=start\">Conceal Wiki</a> and read precious informations."},
+        {"icon": "static/img/whatsnext/img-09.png", "title": "Merchants & Services", "text": "Merchants of all kinds have come to value the financial privacy that Conceal brings. <a href=\"https://conceal.network\">Click here</a> to see list of the merchants that we know of that currently accept Conceal for their goods and services."}
+      ]
+    },
+    "sumokoin": {
+      "boxes": [
+        {"icon": "static/img/whatsnext/img-01.png", "title": "Visit your mining pool to know more", "text": "You get paid out based upon what the pool sets the min payout amount. A pool's min payout amount can vary from pool to pool. Click on the pool link to visit their website."},
+        {"icon": "static/img/whatsnext/img-02.png", "title": "Learn more about Sumokoin", "text": "<a href=\"https://www.sumokoin.org\">Sumokoin</a> Digital Cash For Highly-Confidential Transactions Private, untraceable, decentralized, fungible."},
+        {"icon": "static/img/whatsnext/img-03.png", "title": "Docs", "text": "SUMOKOIN is untraceable; sending and receiving addresses are, encrypted transacted amounts are obfuscated by default and can not be linked to a particular user or real-world identity."},
+        {"icon": "static/img/whatsnext/img-04.png", "title": "Join our amazing community.", "text": "SUMOKOIN is nothing without it's amazing and friendly community. Come and socialise with us on the <a href=\"https://t.me/joinchat/F8RH2kPmFCnA-igHBKSCAA\">Telegram Group</a> or <a href=\"https://www.facebook.com/sumokoin/\">Facebook</a>."},
+        {"icon": "static/img/whatsnext/img-05.png", "title": "Trading Sumokoin on exchange", "text": "Buy and Sell Sumokoin on following <a href=\"https://www.sumokoin.org\">exchanges</a>: <ul class=\"list-unstyled\"><li><a href=\"https://www.livecoin.net/\">- Livecoin.net</a></li><li><a href=\"https://tradeogre.com/exchange/BTC-sumo\">- TradeOgre</a></li></ul>"},
+        {"icon": "static/img/whatsnext/img-06.png", "title": "Follow Sumokoin on social media", "text": "We are updating all our social network regulary, the best way to stay updated with Sumokoin is to follow us on <a href=\"https://twitter.com/Sumokoin\">Twitter</a> or <a href=\"https://discord.gg/heDXTvP\">Discord</a>."},
+        {"icon": "static/img/whatsnext/img-08.png", "title": "Need more help ? We got you covered", "text": "If this is your first time hearing about Sumokoin, we recommend starting by visiting the official <a href=\"https://www.sumokoin.org\">Sumokoin.network</a> website for more informations."},
+        {"icon": "static/img/whatsnext/img-09.png", "title": "Merchants & Services", "text": "Merchants of all kinds have come to value the financial privacy that Sumokoin brings. <a href=\"https://www.sumokoin.org\">Click here</a> to see list of the merchants that we know of that currently accept Sumokoin for their goods and services."}
+      ]
+    },
+    "graft": {
+      "boxes": [
+        {"icon": "static/img/whatsnext/img-01.png", "title": "Visit your mining pool to know more", "text": "You get paid out based upon what the pool sets the min payout amount. A pool's min payout amount can vary from pool to pool. Click on the pool link to visit their website."},
+        {"icon": "static/img/whatsnext/img-02.png", "title": "Learn more about GRAFT", "text": "<a href=\"https://www.graft.network\">GRAFT</a> is a combination (PoW, PoS, DAG) blockchain and a platform that enables a truly decentralized payment network with real-time, universal payment acceptance."},
+        {"icon": "static/img/whatsnext/img-03.png", "title": "Docs", "text": "GRAFT is short for Global Real-time Authorizations and Fund Transfers, but also represents grafting of the new into the old."},
+        {"icon": "static/img/whatsnext/img-04.png", "title": "Join our amazing community.", "text": "SUMOKOIN is nothing without it's amazing and friendly community. Come and socialise with us on the <a href=\"https://t.me/graftnetofficial\">Telegram Group</a> or <a href=\"https://www.reddit.com/r/Graft/\">Reddit</a>."},
+        {"icon": "static/img/whatsnext/img-05.png", "title": "Trading GRAFT on exchange", "text": "Buy and Sell GRAFT on following <a href=\"https://www.graft.org\">exchanges</a>: <ul class=\"list-unstyled\"><li><a href=\"https://tradeogre.com/exchange/BTC-GRFT\">- TradeOgre</a></li><li><a href=\"https://app.stex.com/en/basic-trade/pair/BTC/GRFT/240\">- STEX</a></li><li><a href=\"https://www.hotbit.io/exchange?symbol=GRFT_BTC\">- Hotbit</a></li></ul>"},
+        {"icon": "static/img/whatsnext/img-06.png", "title": "Follow GRAFT on social media", "text": "We are updating all our social network regulary, the best way to stay updated with GRAFT is to follow us on <a href=\"https://twitter.com/graftnetwork\">Twitter</a> or <a href=\"https://discord.gg/BuZr5fy\">Discord</a>."},
+        {"icon": "static/img/whatsnext/img-08.png", "title": "Need more help ? We got you covered", "text": "If this is your first time hearing about GRAFT, we recommend starting by visiting the official <a href=\"https://www.graft.network\">GRAFT.network</a> website for more informations."},
+        {"icon": "static/img/whatsnext/img-09.png", "title": "Merchants & Services", "text": "Merchants of all kinds have come to value the financial privacy that GRAFT brings. <a href=\"https://www.graft.network\">Click here</a> to see list of the merchants that we know of that currently accept GRAFT for their goods and services."}
+      ]
+    },
+    "qrl": {
+      "boxes": [
+        {"icon": "static/img/whatsnext/img-01.png", "title": "Visit your mining pool to know more", "text": "You get paid out based upon what the pool sets the min payout amount. A pool's min payout amount can vary from pool to pool. Click on the pool link to visit their website."},
+        {"icon": "static/img/whatsnext/img-02.png", "title": "Learn more about QRL", "text": "<a href=\"https://www.theqrl.org\">Quantum Resistant Ledger</a> is a secure digital assets for longevity. Externally audited enterprise-grade blockchain platform secure against an attack from quantum computers."},
+        {"icon": "static/img/whatsnext/img-03.png", "title": "Academia", "text": "<a href=\"https://www.theqrl.org/research/#s:citations\">The QRL</a> is cited in and backed by the research of individuals, organizations and institutions. Read more about the cryptographic fundamentals and seminal papers that back the provably quantum secure blockchain."},
+        {"icon": "static/img/whatsnext/img-04.png", "title": "Join our amazing community.", "text": "QRL is nothing without it's amazing and friendly community. Come and socialise with us on the <a href=\"https://github.com/theQRL/QRL/\">GitHub</a> or <a href=\"https://www.reddit.com/r/qrl\">Reddit</a>."},
+        {"icon": "static/img/whatsnext/img-05.png", "title": "Trading QRL on exchange", "text": "Buy and Sell QRL on following exchanges: <ul class=\"list-unstyled\"><li><a href=\"https://international.bittrex.com/Market/Index?MarketName=BTC-QRL\">- Bittrex</a></li><li><a href=\"https://www.cointiger.com/en-us/#/trade_center?coin=qrl_btc\">- CoinTiger</a></li></ul>"},
+        {"icon": "static/img/whatsnext/img-06.png", "title": "Follow QRL on social media", "text": "We are updating all our social network regulary, the best way to stay updated with QRL is to follow us on <a href=\"https://twitter.com/qrledger\">Twitter</a> or <a href=\"https://www.medium.com/the-quantum-resistant-ledger/\">Medium</a>."},
+        {"icon": "static/img/whatsnext/img-07.png", "title": "Download QRL iOS & Android", "text": "QRL wallet for Android <a href=\"https://play.google.com/store/apps/details?id=com.theqrl\">available in the Google Play store</a> and <a href=\"https://itunes.apple.com/us/app/qrl-wallet/id1458620542?ls=1&mt=8\">for iOS</a>. A QRL mobile wallet where the user owns the private keys."},
+        {"icon": "static/img/whatsnext/img-08.png", "title": "Need more help ? We got you covered", "text": "If this is your first time hearing about QRL, we recommend starting by visiting the official <a href=\"https://www.theqrl.org\">theqrl.org</a> website but also <a href=\"https://docs.theqrl.org\">Wiki</a> and read precious informations."},
+        {"icon": "static/img/whatsnext/img-09.png", "title": "Merchants & Services", "text": "Merchants of all kinds have come to value the financial privacy that QRL brings. <a href=\"https://www.theqrl.org\">Click here</a> to see list of the merchants that we know of that currently accept QRL for their goods and services."}
+      ]
+    },
+    "lethean": {
+      "boxes": [
+        {"icon": "static/img/whatsnext/img-01.png", "title": "Visit your mining pool to know more", "text": "You get paid out based upon what the pool sets the min payout amount. A pool's min payout amount can vary from pool to pool. Click on the pool link to visit their website."},
+        {"icon": "static/img/whatsnext/img-02.png", "title": "Learn more about LTHN", "text": "<a href=\"https://lethean.io/\">Lethean</a> allow users to quickly and seamlessly use VPN services by choosing an exit node that best suits their needs."},
+        {"icon": "static/img/whatsnext/img-03.png", "title": "VPN", "text": "<a href=\"https://lethean.io\">Lethean VPN</a> Simply download the wallet, add Lethean, and visit the integrated VPN marketplace to begin using the VPN services."},
+        {"icon": "static/img/whatsnext/img-04.png", "title": "Join our amazing community.", "text": "LTHN is nothing without it's amazing and friendly community. Come and socialise with us on the <a href=\"https://github.com/LetheanMovement\">GitHub</a> or <a href=\"https://www.reddit.com/r/Lethean/\">Reddit</a>."},
+        {"icon": "static/img/whatsnext/img-05.png", "title": "Trading LTHN on exchange", "text": "Buy and Sell LTHN on following exchanges: <ul class=\"list-unstyled\"><li><a href=\"https://tradeogre.com/exchange/BTC-LTHN\">- Tradeogre</a></li><li><a href=\"https://app.stex.com/en/basic-trade/pair/BTC/LTHN/240\">- Stex</a></li><li><a href=\"https://www.tokok.com/\">- Tokok</a></li></ul>"},
+        {"icon": "static/img/whatsnext/img-06.png", "title": "Follow LTHN on social media", "text": "We are updating all our social network regulary, the best way to stay updated with LTHN is to follow us on <a href=\"https://twitter.com/LetheanVPN\">Twitter</a> or <a href=\"https://medium.com/letheanvpn\">Medium</a>."},
+        {"icon": "static/img/whatsnext/img-08.png", "title": "Need more help ? We got you covered", "text": "If this is your first time hearing about LTHN, we recommend starting by visiting the official <a href=\"https://lethean.io/\">lethean.io</a> website but also <a href=\"https://lethean.io/vpn-and-wallets\">additional ressources</a> and read precious informations."},
+        {"icon": "static/img/whatsnext/img-09.png", "title": "Merchants & Services", "text": "Merchants of all kinds have come to value the financial privacy that LTHN brings. <a href=\"https://lethean.io\">Click here</a> to see list of the merchants that we know of that currently accept LTHN for their goods and services."}
+      ]
+    },
+    "x-cash": {
+      "boxes": [
+        {"icon": "static/img/whatsnext/img-01.png", "title": "Visit your mining pool to know more", "text": "You get paid out based upon what the pool sets the min payout amount. A pool's min payout amount can vary from pool to pool. Click on the pool link to visit their website."},
+        {"icon": "static/img/whatsnext/img-02.png", "title": "Learn more about XCASH", "text": "<a href=\"https://x-network.io/xcash/\">X-CASH</a> is public blockchain network & innovative digital asset powering the X network."},
+        {"icon": "static/img/whatsnext/img-03.png", "title": "X-Network", "text": "<a href=\"https://x-network.io\">XCASH</a> allow the creation of customizable blockchains secured by a worldwide network."},
+        {"icon": "static/img/whatsnext/img-04.png", "title": "Join our amazing community.", "text": "XCASH is nothing without it's amazing and friendly community. Come and socialise with us on the <a href=\"https://github.com/X-CASH-official\">GitHub</a> or <a href=\"https://reddit.com/r/xcash\">Reddit</a>."},
+        {"icon": "static/img/whatsnext/img-05.png", "title": "Trading XCASH on exchange", "text": "Buy and Sell XCASH on following exchanges: <ul class=\"list-unstyled\"><li><a href=\"https://app.stex.com/en/basic-trade/pair/ETH/XCASH/240\">- STEX</a></li><li><a href=\"https://www.citex.co.kr/#/home\">- CITEX</a></li></ul>"},
+        {"icon": "static/img/whatsnext/img-06.png", "title": "Follow XCASH on social media", "text": "We are updating all our social network regulary, the best way to stay updated with XCASH is to follow us on <a href=\"https://twitter.com/XCashCrypto\">Twitter</a> or <a href=\"https://medium.com/x-cash\">Medium</a>."},
+        {"icon": "static/img/whatsnext/img-07.png", "title": "X-Payement", "text": "X-Payement is coming soon <a href=\"https://x-network.io/xpayment/\">more soon</a>."},
+        {"icon": "static/img/whatsnext/img-08.png", "title": "Need more help ? We got you covered", "text": "If this is your first time hearing about XCASH, we recommend starting by visiting the official <a href=\"https://x-network.io\">x-network.io</a> website but also <a href=\"https://xcashteam.atlassian.net/servicedesk/\">Wiki</a> and read precious informations."},
+        {"icon": "static/img/whatsnext/img-09.png", "title": "Merchants & Services", "text": "Merchants of all kinds have come to value the financial privacy that XCASH brings. <a href=\"https://x-network.io\">Click here</a> to see list of the merchants that we know of that currently accept XCASH for their goods and services."}
+      ]
+    },
+    "masari": {
+      "boxes": [
+        {"icon": "static/img/whatsnext/img-01.png", "title": "Visit your mining pool to know more", "text": "You get paid out based upon what the pool sets the min payout amount. A pool's min payout amount can vary from pool to pool. Click on the pool link to visit their website."},
+        {"icon": "static/img/whatsnext/img-02.png", "title": "Learn more about Masari", "text": "<a href=\"https://www.getmasari.org/\">Masari</a> is a privacy-centric innovative cryptocurrency that allows users to send money around the globe with low fees very quickly."},
+        {"icon": "static/img/whatsnext/img-03.png", "title": "MSR", "text": "<a href=\"https://www.getmasari.org/\">MSR</a> Masari is a fast, fungible, secure, private and soon-to-be scalable currency."},
+        {"icon": "static/img/whatsnext/img-04.png", "title": "Join our amazing community.", "text": "Masari is nothing without it's amazing and friendly community. Come and socialise with us on the <a href=\"https://github.com/masari-project\">GitHub</a> or <a href=\"https://reddit.com/r/masari\">Reddit</a>."},
+        {"icon": "static/img/whatsnext/img-05.png", "title": "Trading MSR on exchange", "text": "Buy and Sell MSR on following exchanges: <ul class=\"list-unstyled\"><li><a href=\"https://tradeogre.com/exchange/BTC-MSR\">- Tradeogre</a></li><li><a href=\"https://www.southxchange.com/Market/Book/MSR/BTC\">- SouthXchange</a></li></ul>"},
+        {"icon": "static/img/whatsnext/img-06.png", "title": "Follow Masari on social media", "text": "We are updating all our social network regulary, the best way to stay updated with MSR is to follow us on <a href=\"https://twitter.com/masaricurrency\">Twitter</a> or <a href=\"https://medium.com/@officialmasari\">Medium</a>."},
+        {"icon": "static/img/whatsnext/img-07.png", "title": "Download Masari Android", "text": "MSR wallet for Android <a href=\"https://play.google.com/store/apps/details?id=org.masari.wallet&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1\">available in the Google Play store</a>. A MSR mobile wallet where the user owns the private keys."},
+        {"icon": "static/img/whatsnext/img-08.png", "title": "Need more help ? We got you covered", "text": "If this is your first time hearing about MSR, we recommend starting by visiting the official <a href=\"https://getmasari.org\">getmasari.org</a> website but also <a href=\"https://getmasari.org/guides\">Wiki</a> and read precious informations."},
+        {"icon": "static/img/whatsnext/img-09.png", "title": "Merchants & Services", "text": "Merchants of all kinds have come to value the financial privacy that Masari brings. <a href=\"https://getmasari.org\">Click here</a> to see list of the merchants that we know of that currently accept MSR for their goods and services."}
+      ]
+    },
+    "tube": {
+      "boxes": [
+        {"icon": "static/img/whatsnext/img-01.png", "title": "Visit your mining pool to know more", "text": "You get paid out based upon what the pool sets the min payout amount. A pool's min payout amount can vary from pool to pool. Click on the pool link to visit their website."},
+        {"icon": "static/img/whatsnext/img-02.png", "title": "Learn more about BitTube", "text": "<a href=\"https://bittubeapp.com\">BitTube</a> BitTube reshapes how web monetization should work. Browse privately, ad free and support every publisher you visit. Your time powers the new attention economy without compromise."},
+        {"icon": "static/img/whatsnext/img-03.png", "title": "AirTime", "text": "<a href=\"https://www.getmasari.org/\">TUBE</a> AirTime rewards you and the publisher while browsing the web. Reward any website, social account and creator with your time and donations."},
+        {"icon": "static/img/whatsnext/img-04.png", "title": "Join our amazing community.", "text": "BitTube is nothing without it's amazing and friendly community. Come and socialise with us on the <a href=\"https://github.com/ipbc-dev\">GitHub</a> or <a href=\"https://www.reddit.com/r/BitTube\">Reddit</a>."},
+        {"icon": "static/img/whatsnext/img-05.png", "title": "Trading TUBE on exchange", "text": "Buy and Sell TUBE on following exchanges: <ul class=\"list-unstyled\"><li><a href=\"https://tradeogre.com/exchange/BTC-TUBE\">- Tradeogre</a></li><li><a href=\"https://international.bittrex.com/Market/Index?MarketName=BTC-TUBE\">- Bittrex</a></li><li><a href=\"https://www.myqbtc.com/trade?symbol=TUBE_CNYT\">- QBTC</a></li></ul>"},
+        {"icon": "static/img/whatsnext/img-06.png", "title": "Follow BitTube on social media", "text": "We are updating all our social network regulary, the best way to stay updated with TUBE is to follow us on <a href=\"https://twitter.com/BitTubeApp\">Twitter</a> or <a href=\"https://blog.bittubeapp.com/main\">Medium</a>."},
+        {"icon": "static/img/whatsnext/img-07.png", "title": "Download BitTube iOS & Android", "text": "BitTube Wallet for android <a href=\"https://play.google.com/store/apps/details?id=com.bittube.wallet\">available in the Google Play store</a> but also an <a href=\"https://itunes.apple.com/app/bittube-wallet/id1434057930?l=fr&mt=8\">iOS wallet</a>"},
+        {"icon": "static/img/whatsnext/img-08.png", "title": "Need more help ? We got you covered", "text": "If this is your first time hearing about TUBE, we recommend starting by visiting the official <a href=\"https://bittubeapp.com\">getmasari.org</a> website but also <a href=\"https://kb.bittubeapp.com\">Wiki</a> and read precious informations."},
+        {"icon": "static/img/whatsnext/img-09.png", "title": "Merchants & Services", "text": "Merchants of all kinds have come to value the financial privacy that BitTube brings. <a href=\"https://bittubeapp.com\">Click here/a> to see list of the merchants that we know of that currently accept TUBE for their goods and services."}
+      ]
+    },
+    "aeon": {
+      "boxes": [
+        {"icon": "static/img/whatsnext/img-01.png", "title": "Visit your mining pool to know more", "text": "You get paid out based upon what the pool sets the min payout amount. A pool's min payout amount can vary from pool to pool. Click on the pool link to visit their website."},
+        {"icon": "static/img/whatsnext/img-02.png", "title": "Learn more about Aeon", "text": "<a href=\"http://www.aeon.cash\">Aeon</a> is about enabling this era, enabling an age where all people everywhere have the freedom to privately send and receive money with whatever gadget they already own."},
+        {"icon": "static/img/whatsnext/img-03.png", "title": "Difference", "text": "<a href=\"http://www.aeon.cash\">AEON</a> Overall, AEON seeks to be a lightweight-Monero, similar to how Litecoin seeks to be a lightweight-Bitcoin."},
+        {"icon": "static/img/whatsnext/img-04.png", "title": "Join our amazing community.", "text": "Aeon is nothing without it's amazing and friendly community. Come and socialise with us on the <a href=\"https://github.com/aeonix\">GitHub</a> or <a href=\"https://reddit.com/r/aeon\">Reddit</a>."},
+        {"icon": "static/img/whatsnext/img-05.png", "title": "Trading AEON on exchange", "text": "Buy and Sell AEON on following exchanges: <ul class=\"list-unstyled\"><li><a href=\"https://tradeogre.com/exchange/BTC-AEON\">- Tradeogre</a></li><li><a href=\"https://bittrex.com/Market/Index?MarketName=BTC-AEON\">- Bittrex</a></li><li><a href=\"https://hitbtc.com/AEON-to-BTC\">- HitBTC</a></li></ul>"},
+        {"icon": "static/img/whatsnext/img-06.png", "title": "Follow Aeon on social media", "text": "We are updating all our social network regulary, the best way to stay updated with AEON is to follow us on <a href=\"https://twitter.com/AeonCoin\">Twitter</a> or <a href=\"https://medium.com/@AEON_Community\">Medium</a>."},
+        {"icon": "static/img/whatsnext/img-08.png", "title": "Need more help ? We got you covered", "text": "If this is your first time hearing about AEON, we recommend starting by visiting the official <a href=\"http://www.aeon.cash\">aeon.cash</a> website but also <a href=\"https://coinwik.org/Aeon\">Wiki</a> and read precious informations."},
+        {"icon": "static/img/whatsnext/img-09.png", "title": "Merchants & Services", "text": "Merchants of all kinds have come to value the financial privacy that Aeon brings. <a href=\"http://www.aeon.cash\">Click here/a> to see list of the merchants that we know of that currently accept AEON for their goods and services."}
+      ]
+    },
+    "arqma": {
+      "boxes": [
+        {"icon": "static/img/whatsnext/img-01.png", "title": "Visit your mining pool to know more", "text": "You get paid out based upon what the pool sets the min payout amount. A pool's min payout amount can vary from pool to pool. Click on the pool link to visit their website."},
+        {"icon": "static/img/whatsnext/img-02.png", "title": "Learn more about ArQmA", "text": "<a href=\"https://arqma.com/\">ArQmA</a> the heart of ArQ-Network, which was created by crypto enthusiasts to connect merchants big to small with seamless transactions and minimal fees to zero !"},
+        {"icon": "static/img/whatsnext/img-03.png", "title": "Decentralization", "text": "<a href=\"https://arqma.com\">ARQ</a> ArQmA creates a full and brilliant currency exchange platform which aims to provide more advanced features than any previously developed protocol."},
+        {"icon": "static/img/whatsnext/img-04.png", "title": "Join our amazing community.", "text": "ArQmA is nothing without it's amazing and friendly community. Come and socialise with us on the <a href=\"https://github.com/arqma\">GitHub</a> or <a href=\"https://reddit.com/r/arqma\">Reddit</a>."},
+        {"icon": "static/img/whatsnext/img-05.png", "title": "Trading ARQ on exchange", "text": "Buy and Sell ARQ on following exchanges: <ul class=\"list-unstyled\"><li><a href=\"https://tradeogre.com/exchange/BTC-ARQ\">- Tradeogre</a></li><li><a href=\"https://www.citex.co.kr/#/home\">- CITEX</a></li><li><a href=\"https://www.qbtc.ink/markets?symbol=ARQ_CNYT\">- QBTC</a></li></ul>"},
+        {"icon": "static/img/whatsnext/img-06.png", "title": "Follow ArQmA on social media", "text": "We are updating all our social network regulary, the best way to stay updated with ARQ is to follow us on <a href=\"https://twitter.com/ArQmA_Network\">Twitter</a> or <a href=\"https://arqma.com/news/\">Medium</a>."},
+        {"icon": "static/img/whatsnext/img-07.png", "title": "Download ArQmA for Android", "text": "ArQmA Wallet for android <a href=\"https://play.google.com/store/apps/details?id=com.arqma.Droid\">available in the Google Play store</a>. A ARQ mobile wallet where the user owns the private keys."},
+        {"icon": "static/img/whatsnext/img-08.png", "title": "Need more help ? We got you covered", "text": "If this is your first time hearing about ARQ, we recommend starting by visiting the official <a href=\"https://arqma.com\">getmasari.org</a> website but also <a href=\"https://arqma.com/faq/\">Wiki</a> and read precious informations."},
+        {"icon": "static/img/whatsnext/img-09.png", "title": "Merchants & Services", "text": "Merchants of all kinds have come to value the financial privacy that ArQmA brings. <a href=\"https://arqma.com\">Click here/a> to see list of the merchants that we know of that currently accept ARQ for their goods and services."}
+      ]
+    },
+    "iridium": {
+      "boxes": [
+        {"icon": "static/img/whatsnext/img-01.png", "title": "Visit your mining pool to know more", "text": "You get paid out based upon what the pool sets the min payout amount. A pool's min payout amount can vary from pool to pool. Click on the pool link to visit their website."},
+        {"icon": "static/img/whatsnext/img-02.png", "title": "Learn more about Iridium", "text": "<a href=\"https://ird.cash\">Iridium</a> takes advantage of the technology behind CryptoNote by pulling together the best features that privacy coins can offer the world."},
+        {"icon": "static/img/whatsnext/img-04.png", "title": "Join our amazing community.", "text": "Iridium is nothing without it's amazing and friendly community. Come and socialise with us on the <a href=\"https://github.com/iridiumdev\">GitHub</a> or <a href=\"https://reddit.com/r/IridiumCoin\">Reddit</a>."},
+        {"icon": "static/img/whatsnext/img-05.png", "title": "Trading IRD on exchange", "text": "Buy and Sell IRD on following exchanges: <ul class=\"list-unstyled\"><li><a href=\"https://tradeogre.com/exchange/BTC-IRD\">- Tradeogre</a></li><li><a href=\"https://crex24.com/exchange/IRD-BTC\">- CREX24</a></li></ul>"},
+        {"icon": "static/img/whatsnext/img-06.png", "title": "Follow Iridium on social media", "text": "We are updating all our social network regulary, the best way to stay updated with IRD is to follow us on <a href=\"https://twitter.com/iridiumCash\">Twitter</a>."},
+        {"icon": "static/img/whatsnext/img-08.png", "title": "Need more help ? We got you covered", "text": "If this is your first time hearing about IRD, we recommend starting by visiting the official <a href=\"https://ird.cash\">ird.cash</a> website but also <a href=\"https://wiki.ird.cash/\">Wiki</a> and read precious informations."},
+        {"icon": "static/img/whatsnext/img-09.png", "title": "Merchants & Services", "text": "Merchants of all kinds have come to value the financial privacy that Iridium brings. <a href=\"https://ird.cash\">Click here/a> to see list of the merchants that we know of that currently accept IRD for their goods and services."}
+      ]
     }
   },
   "poweredByLinks": {
       "title": "BLOC GUI Miner&reg;", 
       "links": [
         {"link": "https://bloc.money", "text": "- Visit our website"},
-        {"link": "https://github.com/furiousteam/BLOC-GUI-Miner", "text": "- Contribute to this project"}
+        {"link": "https://github.com/furiousteam/BLOC-GUI-Miner", "text": "- Contribute to this project"},
+        {"link": "https://t.me/bloc_money", "text": "- Chat on Telegram Group"},
+        {"link": "https://discord.gg/5Buudya", "text": "- Join us on Discord"}
       ]
   },
   "cryptunitWidget": {
@@ -346,33 +1130,105 @@
       "turtlecoin": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=20&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>",
       "ryo": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=25&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>",
       "haven": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=4&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>",
-      "monero": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=5&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>"
+      "monero": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=5&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>",
+      "loki": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=3&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>",
+      "conceal": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=58&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>",
+      "sumokoin": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=8&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>",
+      "graft": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=18&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>",
+      "qrl": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=34&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>",
+      "lethean": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=23&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>",
+      "x-cash": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=59&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>",
+      "masari": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=21&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>",
+      "tube": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=16&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>",
+      "aeon": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=24&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>",
+      "arqma": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=47&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>",
+      "iridium": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=48&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>"
   },
   "newsBox": {
       "bloc": {
-          "title": "BLOC Wallet on App Store",
-          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/bloc-news.png",
-          "link": "https://itunes.apple.com/us/app/bloc-wallet-by-furiousteam-ltd/id1437924269?mt=8"
+          "title": "BLOC available soon on:",
+          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/paychange.png",
+          "link": "https://paychange.com"
       },
       "turtlecoin": {
-          "title": "Turtlecoin News",
-          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/turtlecoin/news.png",
-          "link": "https://blog.turtlecoin.lol/"
+          "title": "TRTL available soon on:",
+          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/paychange.png",
+          "link": "https://paychange.com"
       },
       "ryo": {
-          "title": "RYO News",
-          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/RYO/news.png",
-          "link": "https://medium.com/@ryo.currency"
+          "title": "RYO available soon on:",
+          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/paychange.png",
+          "link": "https://paychange.com"
       },
       "haven": {
-          "title": "Haven White Paper",
-          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/haven/news.png",
-          "link": "http://docs.havenprotocol.org/haven-protocol-wp-2_0.pdf"
+          "title": "XHV available soon on:",
+          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/paychange.png",
+          "link": "https://paychange.com"
       },
       "monero": {
-          "title": "Monero News",
-          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/monero/news.png",
-          "link": "https://www.getmonero.org/"
+          "title": "XMR available soon on:",
+          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/paychange.png",
+          "link": "https://paychange.com"
+      },
+      "loki": {
+          "title": "LOKI available soon on:",
+          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/paychange.png",
+          "link": "https://paychange.com"
+      },
+      "conceal": {
+          "title": "CCX available soon on:",
+          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/paychange.png",
+          "link": "https://paychange.com"
+      },
+      "sumokoin": {
+          "title": "SUMO available soon on:",
+          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/paychange.png",
+          "link": "https://paychange.com"
+      },
+      "graft": {
+          "title": "GRFT available soon on:",
+          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/paychange.png",
+          "link": "https://paychange.com"
+      },
+      "qrl": {
+          "title": "QRL available soon on:",
+          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/paychange.png",
+          "link": "https://paychange.com"
+      },
+      "lethean": {
+          "title": "LTHN available soon on:",
+          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/paychange.png",
+          "link": "https://paychange.com"
+      },
+      "x-cash": {
+          "title": "XCASH available soon on:",
+          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/paychange.png",
+          "link": "https://paychange.com"
+      },
+      "masari": {
+          "title": "MSR available soon on:",
+          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/paychange.png",
+          "link": "https://paychange.com"
+      },
+      "tube": {
+          "title": "TUBE available soon on:",
+          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/paychange.png",
+          "link": "https://paychange.com"
+      },
+      "aeon": {
+          "title": "AEON available soon on:",
+          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/paychange.png",
+          "link": "https://paychange.com"
+      },
+      "arqma": {
+          "title": "ARQ available soon on:",
+          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/paychange.png",
+          "link": "https://paychange.com"
+      },
+      "iridium": {
+          "title": "IRD available soon on:",
+          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/paychange.png",
+          "link": "https://paychange.com"
       }
   }
 }
